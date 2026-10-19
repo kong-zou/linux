@@ -41,11 +41,20 @@ more 也可以查看文件 并且适用于大文件
 2.file  查看文件类型
 file  youxi.txt  //查看单个文件类型
 file /mnt/hgfs/22/*    //查看22文件夹里面所有的文件类型
+
 3. grep  在文件里面查寻
 grep "hello" youxi.txt		# 查找包含hello的行 
+
+
 4.find  寻找文件
 find / -name "games"   //在/根目录下查找名字为games的文件
 find / -iname "games"   //忽略大小写查找
+
+5.echo 输出指令
+例如
+echo "hello world"     //会直接输出引号里面的内容
+而
+echo `ls`   //则会执行反引号里面的指令
 
 
 
