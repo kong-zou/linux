@@ -44,11 +44,14 @@ file /mnt/hgfs/22/*    //查看22文件夹里面所有的文件类型
 
 3. grep  在文件里面查寻
 grep "hello" youxi.txt		# 查找包含hello的行 
+grep -n "hello" youxi.txt    //显示此行为多少行
+grep -v "hello" youxi.txt   //显示除去hello后的其他行
 
 
 4.find  寻找文件
 find / -name "games"   //在/根目录下查找名字为games的文件
 find / -iname "games"   //忽略大小写查找
+find / -name "*.txt"     //查找是.txt 后缀的文件
 
 5.echo 输出指令
 例如
