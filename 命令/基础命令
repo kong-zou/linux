@@ -2,6 +2,7 @@
 由   命令本身 [命令的一些选项] [命令的参数]
  其中 命令的一些选项:可以通过选项来控制命令的一些细节
     命令的参数:用于命令的指向
+
 一.查找切换文件
 1.ls 列出目录的内容
 选项 -l 将目录以列表的形式列出
@@ -9,26 +10,37 @@
      -h 更加人性化的显示出来 无法单独使用
 以上三个可联合使用
 例:ls -alh /home/kong    //将/home/kong下的所有文件(包括隐藏文件)以列表的形式详细写出来
+
 2.cd 切换文件目录
   cd [要切换到的目录]
    特别的 只输入cd 会自动切到home目录
+
 3.pwd  查看当前目录
+
 二.操作文件
 1. touch  创建文件 会在当前目录创建一个文件
 touch youxi.txt 
 也可以一次性输入多个文件 用空格隔开
 touch file1.txt file2.log file3.sh
+
 2.mv  移动(改名)文件
 mv old.txt new.txt   //将old.txt改名为new.txt
 mv test.txt /tmp/				# 将test.txt移动到/tmp
+
 3.cp   复制文件
 cp test.txt /tmp/						# 把test.txt复制到/tmp目录
+
 4. rm  删除文件
 rm youxi.txt  
+
 5.mkdir  创建目录(也就是文件夹)
 mkdir test			# 创建单个目录  
 mkdir dir1 dir2 dir3	# 创建多个同级目录，空格隔开
 	mkdir -p a/b/c			# 递归创建多级目录，一次性创建 a/b/c 三层目录
+
+6.rmdir 删除目录
+rmdir [删除的文件]
+
 三.修改 查看文件
 1. cat
 cat > youxi.txt    //输入文本 并将其导入到youxi.txt文件 会覆盖原文本
@@ -68,6 +80,14 @@ echo `ls`   //则会执行反引号里面的指令
 
 如
 which cd   //虽然find也可以查找 但如果单查指令的话 这个快捷的多
+
+8.压缩指令太多了 具体的在上传的文件上
+
+四.软链接   ln
+ln -s [被链接的文件或文件夹] [链接存放的地方以及链接的名字]      //相当于创建了一个快捷方式
+
+ls -s /mnt/hgfs/22 /home/22    //注意!! 最好写绝对路径 写相对路径虽然不会报错 但创建的链接是无效的
+
 
 
 
