@@ -32,6 +32,7 @@ cp test.txt /tmp/						# 把test.txt复制到/tmp目录
 
 4. rm  删除文件
 rm youxi.txt  
+rm -r 22      //可以删除整个文件夹
 
 5.mkdir  创建目录(也就是文件夹)
 mkdir test			# 创建单个目录  
@@ -89,6 +90,9 @@ ln -s [被链接的文件或文件夹] [链接存放的地方以及链接的名�
 ls -s /mnt/hgfs/22 /home/22    //注意!! 最好写绝对路径 写相对路径虽然不会报错 但创建的链接是无效的
 
 
+五.用户组
+useradd zou    //创建用户zou
+passwd zou       //创建密码
 
 
 
